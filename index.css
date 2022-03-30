@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: black;
+}
+html{
+    overflow: scroll;
+}
+body{
+    background-color: rgb(223, 210, 210);
+}
+.nav-bar{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    
+}
+.navbar-container{
+    max-width: 1112px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.nav-logo img{
+    width: 8rem;
+}
+.pass-photo{
+    width: 4rem;
+    height: 4rem ;
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pass-photo img{
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.passport{
+    display: flex;
+    color: white;
+    align-items: center;
+    gap: 1rem;
+}
+.toggle-icon{
+    position: relative;
+    display: none;
+
+}
+.btn-open{
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+}
+.btn-close{
+    font-size: 2rem;
+    color: white;
+}
+.passport h3{
+    color: white;
+}
+
+/* menu section of the css */
+.menu-section{
+    width: 100%;
+    height: 60px;
+    color: black;
+   
+    
+    background-color: white;
+}
+.menu-container{
+    width: 1134px;
+    height: 100%;
+    display: flex;
+    
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.menu-flex{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.menu-flex span{
+    color: rgb(16, 19, 56);
+}
+.menu-flex h4{
+    color: rgb(16, 19, 56);
+}
+.menu-items{
+    transition: transform 350ms ease;
+    padding-bottom: 0.8rem;
+}
+.menu-items:hover{
+    border-bottom: 2px solid black;
+}
+
+/* ============= utility clases ============ */
+.containers{
+    max-width: 1112px;
+    padding: 0 10px;
+   margin: 3rem auto;
+}
+
+.card{
+    border-radius: 5px;
+    padding: 1.5rem;
+}
+/* =========== utility ends here ============= */
+
+
+/* ============== cards are in this area ============== */
+.first-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.card1{
+    background-color: rgb(37, 37, 71);
+    display: flex;
+   
+}
+.card1-first-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card1-last-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.card1-first{
+    display: flex;
+    gap: 1rem;
+    
+}
+.card1-last{
+    display: flex;
+    gap: 1rem;
+}
+.white h4 {
+    color: white;
+}
+.white h2{
+    color: white;
+}
+.white p{
+    color: white;
+}
+.white h5{
+    color: white;
+}
+.card2-first-flex .running{
+    background-color: rgb(119, 156, 119);
+    padding: 0.2rem 0.3rem;
+    border-radius: 5px;
+    color: white;
+}
+.card1 img{
+    width: 2rem;
+   }
+   .card2{
+       background-color: white;
+       color: black;
+   }
+   .card2 h5{
+       color: black;
+   }
+   .card2 p{
+       color: black;
+   }
+   .card2 h2{
+       color: black;
+   }
+   .card2 a{
+       background-color: rgb(37, 37, 71);
+       color: white;
+       text-decoration: none;
+       padding: 1rem 2rem;
+       border-radius: 5px;
+   }
+   .card2-first-flex{
+       display: flex;
+       gap: 0.5rem;
+   }
+   .card2-last-flex{
+       display: flex;
+       flex-direction: column;
+       gap: 2rem;
+   }
+
+   .card3{
+       background-color: white;
+       color: black;
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+   }
+   .card3 div h4{
+       color: black;
+   }
+   .card3 div a{
+       color: white;
+       text-decoration: none;
+       background-color: rgb(119, 156, 119);
+       padding: 0.1rem 0.2rem;
+       border-radius: 4px;
+   }
+   .card3 div p{
+       color: black;
+   }
+
+   /*  this is for the second part of the site */
+   .phase-2-container{
+       display: grid;
+       grid-template-columns: 60% 40%;
+       gap: 1rem;
+      
+   }
+   .phase-2-card-1{
+       background-color: white;
+       display: grid;
+       grid-template-columns: 1fr 2fr;
+       gap: 1rem;
+   }
+   .phase-2-card-1 img{
+       width: 100%;
+   }
+   .phase-2-card1-proper{
+       display: flex;
+       flex-direction: column;
+       row-gap: 2rem;
+       color: white;
+   }
+   .download{
+       display: flex;
+       align-items: center;
+       gap: 1rem;
+       background-color: rgb(37, 37, 71);
+       width: 50%;
+       padding: 1rem 1rem;
+       text-decoration: none;
+       border-radius: 10px;
+   }
+   .download .d-icon{
+       color: white;
+   }
+   .download span{
+       color: white;
+   }
+   .phase-2-card-2{
+       background-color: white;
+       display: flex;
+       flex-direction: column;
+       gap: 1rem;
+   }
+   .amt-raised{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+   }
+   .progress-bar{
+       width: 100%;
+       height: 0.5rem;
+       background-color: blue;
+       border-radius: 5px;
+   }
+   .time{
+       display: flex;
+       flex-direction: column;
+       gap:1rem;
+   }
+   .time-div{
+       display: flex;
+       gap: 1rem
+   }
+   .time-divs{
+       width: 4rem;
+       aspect-ratio: 1;
+       border-radius: 5px;
+       background-color: silver;
+       display: flex;
+       text-align: center;
+       align-items: center;
+       justify-content: center;
+   }
+  
+
+   
+
+/*  for mobile media queries */
+@media screen and (max-width:49rem){
+    .menu-section{
+        width: 50%;
+        height: 300%;
+        color: black;
+        position: absolute;
+       
+        
+        background-color: white;
+    }
+    .menu-container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        gap: 2rem;
+        gap: 1rem;
+        margin: 0 auto;
+        padding: 0 10px;
+        padding-top: 3rem;
+    }
+    .menu-section{
+        display: none;
+    }
+    .toggle-icon{
+        position: relative;
+        display: inline-block;
+    
+    }
+    .passport h3{
+       display: none;
+
+    }
+    .btn-close{
+        display: none;
+    }
+    .btn-close:hover{
+        cursor: pointer;
+    }
+    .btn-open{
+        position: relative;
+    }
+    .btn-open:hover{
+        cursor: pointer;
+    }
+    .pass-photo{
+        width: 3rem;
+        height: 3rem ;
+        background-color: grey;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pass-photo img{
+        width: 2rem;
+        aspect-ratio: 1;
+        border-radius: 50%;
+    }
+    .menu-items{
+        width: 100%;
+    }
+    .menu-items a span{
+        color: rgb(71, 67, 67);
+    }
+    .menu-items a h4{
+        color: rgb(71, 67, 67);
+    }
+    .first-card-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .first-card-sec{
+        z-index: 9999;
+    }
+    .first-card-sec .containers{
+        margin-top: 0.5rem;
+    }
+    .phase-2-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .phase-2-card-1{
+        display: flex;
+        flex-direction: column;
+    }
+    .phase-2-card-1 img{
+        width: 50%;
+    }
+}
